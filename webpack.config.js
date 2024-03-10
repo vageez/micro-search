@@ -7,7 +7,7 @@ module.exports = (_, argv) => ({
     publicPath:
       argv.mode === "development"
         ? "http://localhost:8085/"
-        : "https://awesearch.bellmedia.ca/", // Production
+        : "https://micro-search.vercel.app/", // Production
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
@@ -48,8 +48,8 @@ module.exports = (_, argv) => ({
       name: "search",
       filename: "remoteEntry.js",
       remotes: {
-        host: "host@http://localhost:8080/remoteEntry.js",
-        grid: "grid@http://localhost:8092/remoteEntry.js",
+        host: "host@https://micro-host-self.vercel.app/remoteEntry.js",
+        grid: "grid@https://micro-grid.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./Search": "./src/components/Search",
