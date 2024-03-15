@@ -11,7 +11,7 @@ export const Search = () => {
 
   return (
     <div style={{ border: "1px solid purple", margin: "2px" }}>
-      <h1>Search Page App</h1>
+      <h1>Search Page App UPDATE</h1>
       <Grid />
     </div>
   );
